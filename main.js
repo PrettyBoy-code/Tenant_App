@@ -10,10 +10,12 @@ const collapse_SubLink3 = document.getElementById("collapse_sublink3");
 let drop = true;
 
 mobile_menu.addEventListener("click", sidebarHidden);
+nav_sidebar.style.display = "block";
 dropdown.addEventListener("click", dropdownVisible);
 
 function sidebarHidden() {
   console.log("clicked");
+  
   if (nav_sidebar.style.display == "block") {
     nav_sidebar.style.display = "none";
   } else {
