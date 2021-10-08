@@ -1,4 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #14213d;
+}
+svg {
+  margin-top: 0.5rem;
+  width: 2rem;
+}
 
-body{
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,107,141,1) 0%, rgba(0,69,91,1) 90% );
+header {
+  height: 5rem;
+  width: 100%;
+  background-color: #e5e5e5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav {
+  color: #fff;
+  background-color: #14213d;
+  width: 100%;
+  height: 3rem;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+}
+nav ul {
+  list-style-type: none;
+}
+.navDiv {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.navDiv svg{
+  display: none;
+}
+.navLink {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.side {
+  position: absolute;
+  top: 8rem;
+  left: 0;
+  height: 100%;
+  width: 15%;
+  background-color: #fca311;
+  padding-top: 2rem;
+  
+}
+.side .navContainer {
+  height: 80%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.navTitle {
+  width: 90%;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 1rem auto 2rem;
+  border-bottom: #14213d 2px solid;
+}
+.nav__name {
+  font-size: 1.2rem;
+  padding: 0.7rem;
+}
+.nav__name:hover {
+  background-color: #14213d;
+  color: #fff;
+  border-radius: 0.5rem;
+}
+.collapse {
+  color: #14213d;
+  width: 90%;
+  height: 30%;
+  position: relative;
+  left: -0.5rem;
+  margin: 0 auto .5rem;
+  font-size: 1.2rem;
+  padding: 0.7rem;
+}
+.collapseBg{
+  background-color: #14213d;
+  color: #fca311;
+  border-radius: 1rem; 
+}
+.collapseTitle {
+  display: flex;
+  text-align: center;
+  align-self: center;
+  justify-content: center;
+  margin: 0;
+}
+.collapseTitle svg{
+  position: relative;
+  top: -.7rem;
+  right: -2rem;
+}
+.collapse__menu {
+  position: relative;
+  top: -1rem;
+  height: 90%;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; 
+  border-radius: 1rem; 
+}
+.collapse__menu a {
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  width: 50%;
+  padding: .2rem;
+  border-radius: .5rem;
+}
+.collapse__menu a:hover{
+  background-color: #757575;
+  color: #14213d;
+}
+
+main {
+  width: 100%;
+  height: 60vh;
+  margin: 0 auto;
+  display: flex;
+  display: grid;
+  justify-content: center;
+}
+.dataTable {
+  width: 100%;
+}
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+
+/* form css*/
+
+.wrapper {
+  max-width: 450px;
+  width: 100%;
+  background: #f3f3f3;
+  margin: 20px 0;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+  padding: 30px;
+}
+
+.wrapper .title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #fec107;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrapper .form {
+  width: 100%;
+}
+
+.wrapper .form .inputField {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper .form .inputField label {
+  width: 200px;
+  color: #757575;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.wrapper .form .inputField .input,
+.wrapper .form .inputField .textarea {
+  width: 100%;
+  outline: none;
+  border: 1px solid #d5dbd9;
+  font-size: 15px;
+  padding: 8px 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.wrapper .form .inputField .textarea {
+  width: 100%;
+  height: 125px;
+  resize: none;
+}
+
+.wrapper .form .inputField .input:focus,
+.wrapper .form .inputField .textarea:focus {
+  border: 1px solid #fca311;;
+}
+
+.wrapper .form .inputField .btn {
+  width: 100%;
+  padding: 8px 10px;
+  font-size: 15px;
+  border: 0px;
+  background:  #fca311;;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+.wrapper .form .inputField .btn:hover {
+  background: #fec107;
+  color: #14213d;
+}
+
+.wrapper .form .inputField:last-child {
+  margin-bottom: 0;
+}
+
+.hidden{
+  display: none;
+}
+@media (max-width: 1024px) {
+  .nav__name {
+    font-size: 1rem;
+  }
+  .side .navContainer {
+    height: 55%;
+    width: 100%;
+  }
+}
+@media (max-width: 870px) {
+  header {
+    display: none;
+  }
+  nav{
+    font-size: 1rem;
+  }
+  .navDiv{
+    justify-content: space-between;
+  }
+  .navDiv svg{
+    display: block;
+  }
+  .navLink {
+    margin-top: .8rem;
+    width: 70%;
+  }
+  .navTitle{
+    font-size: 1.3rem;
+    margin: 1rem auto 1rem;
+  }
+  .nav__name{
+    font-size: 1rem;
+    padding: 0.4rem;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .wrapper .form .inputField {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .wrapper .form .inputField label {
+    margin-bottom: 5px;
+  }
+  .wrapper .form .inputField.terms {
+    flex-direction: row;
+  }
+
+  .side {
+    top: 3rem;
+    width: 50%;
+    padding-top: 0;
+  }
+
+  .side .navContainer {
+    height: 90%;
+  }
+  
 }

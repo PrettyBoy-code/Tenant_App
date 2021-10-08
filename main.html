@@ -1,77 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
     <title>Welcome</title>
-</head>
-<body>
-    <div class="container-fluid" style="width: 100% ;height: 2rem;"></div>
-    <nav class=" navbar navbar-expand-lg navbar-light bg-warning">
-             
-        <div  id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-uppercase font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Master
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item bg-light" href="#">Apartment Reg</a>
-                  <a class="dropdown-item bg-light" href="#">House Reg</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item bg-light" href="#">Tenant Reg</a>
-                  <a class="dropdown-item bg-light" href="#">Employee Reg</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item bg-light" href="#">Contact</a>
-                  <a class="dropdown-item bg-light" href="#">Bank Account</a>
-                  <a class="dropdown-item bg-light" href="#">Deposit / Invest</a>
-                  <a class="dropdown-item bg-light" href="#">Account Panel</a>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-uppercase font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Process
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item bg-light" href="#">Payment</a>
-                  <a class="dropdown-item bg-light" href="#">Maintenance</a>
-                  <a class="dropdown-item bg-light" href="#">Document</a>
-                  <a class="dropdown-item bg-light" href="#">Other Transaction</a>
-                </div>
-              </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-uppercase font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Report
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item bg-light" href="#">Day Report</a>
-                <a class="dropdown-item bg-light" href="#">Tenant</a>
-                <a class="dropdown-item bg-light" href="#">Apartment</a>
-                <a class="dropdown-item bg-light" href="#">Maintenance</a>
-                <a class="dropdown-item bg-light" href="#">Rent Details</a>
-                <a class="dropdown-item bg-light" href="#">Other Reports</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-uppercase font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Settings
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item bg-light" href="#">Backup</a>
-                  <a class="dropdown-item bg-light" href="#">Restore</a>
-  </div>
-              </li>
-           
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Tenant Management Application</h1>
+      </header>
+      <!--nav bar-->
+      <nav>
+        <div class="navDiv">
+          <svg  id="mobile_menu"  viewBox="0 0 512 512">
+            <title>Menu</title>
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-miterlimit="10"
+              stroke-width="32"
+              d="M80 160h352M80 256h352M80 352h352"
+            />
+          </svg>
+          <ul class="navLink">
+            <li class="navItems">Master</li>
+            <li class="navItems">Process</li>
+            <li class="navItems">Report</li>
+            <li class="navItems">Settings</li>
           </ul>
         </div>
       </nav>
 
+      <!--Sidebar nav-->
+      <div id="nav_sidebar"class="side">
+        <h3 id="nav_title" class="navTitle">Master</h3>
+        <div class="navContainer">
+          <a href="#" class="nav__link active">
+            <span class="nav__name">Apartment Reg</span>
+          </a>
+          <a href="#" class="nav__link">
+            <span class="nav__name">House Reg</span>
+          </a>
 
-      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body>
+          <a href="#" class="nav__link">
+            <span class="nav__name">Tenant Reg</span>
+          </a>
+          <a href="#" class="nav__link">
+            <span class="nav__name">Employee Reg</span>
+          </a>
+
+          <a href="#" class="nav__link">
+            <span class="nav__name">Contact</span>
+          </a>
+          <a href="#" class="nav__link">
+            <span class="nav__name">Bank Account</span>
+          </a>
+          <a href="#" class="nav__link">
+            <span class="nav__name">Deposit & Invest</span>
+          </a>
+          <a href="#" class="nav__link">
+            <span class="nav__name">Account Panel</span>
+          </a>
+
+          <div id="collapse_down" class="nav__link collapse">
+            <div class="collapseTitle">
+              <span class="collapse_name">Projects</span>
+
+              <i id="dropdown" class="icons"
+                ><svg class="ionicon" viewBox="0 0 512 512">
+                  <title>Chevron Down</title>
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="48"
+                    d="M112 184l144 144 144-144"
+                  />
+                </svg>
+              </i>
+            </div>
+            <ul id="collapse__menu" class="hidden">
+              <a href="#" id="collapse_sublink1" class="hidden">Data</a>
+              <a href="#" id="collapse_sublink2" class="hidden">Group</a>
+              <a href="#" id="collapse_sublink3" class="hidden">Members</a>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!--Main-->
+      <main>
+        <div class="wrapper">
+          <div class="title">
+            Registration Form
+          </div>
+        <form class="form" action="#">
+          <div class="inputField">
+          <label for="fname">APARTMENT ID :</label>
+          <input class="input" type="text" id="fname" name="fname" />
+        </div>
+
+        <div class="inputField">
+          <label for="lname">DATE</label>
+          <input class="input" type="date" id="lname" name="lname" />
+        </div>
+
+          <div class="inputField">
+          <label for="lname">APARTMENT NAME</label>
+          <input class="input" type="text" id="lname" name="lname" />
+        </div>
+
+          <div class="inputField">
+          <label for="address">Address:</label>
+          <textarea  class="textarea" name="address" id="address"></textarea
+          >
+        </div>
+
+          <div class="inputField">
+          <label for="fname">NO OF HOUSE AVAILABLE :</label>
+          <input class="input" type="number" id="fname" name="fname" />
+        </div>
+
+          <div class="inputField">
+          <label for="fname">OTHERS :</label>
+          <input class="input" type="text" id="fname" name="fname" />
+        </div>
+
+          <div class="inputField">
+          <button class="btn" type="submit">Submit</button>
+        </div>
+          <div class="inputField">
+          <button class="btn">Clear</button>
+        </div>
+        </form>
+      </div>
+
+      <div class="dataTable">
+        <table class="styled-table">
+          <thead>
+              <tr>
+                  <th>Name</th>
+                  <th>Points</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>Dom</td>
+                  <td>6000</td>
+              </tr>
+              <tr class="active-row">
+                  <td>Melissa</td>
+                  <td>5150</td>
+              </tr>
+              <!-- and so on... -->
+          </tbody>
+      </table>
+      </div>
+
+      </main>
+    </div>
+    <script src="./main.js"></script>
+  </body>
 </html>
