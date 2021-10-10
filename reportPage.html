@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Welcome</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Tenant Management Application</h1>
+      </header>
+      <!--nav bar-->
+      <nav>
+        <div class="navDiv">
+          <svg  id="mobile_menu"  viewBox="0 0 512 512">
+            <title>Menu</title>
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-miterlimit="10"
+              stroke-width="32"
+              d="M80 160h352M80 256h352M80 352h352"
+            />
+          </svg>
+          <ul class="navLink">
+            <a href="masterPage.html"><li id="master" class="navItems">Master</li></a>
+            <a href="processPage.html"><li id="process" class="navItems">Process</li></a>
+             <a href="reportPage.html"><li id="report" class="navItems">Report</li></a>
+             <a href="settingPage.html"><li id="settings" class="navItems">Settings</li></a>
+          </ul>
+        </div>
+      </nav>
+
+      <!--Sidebar nav-->
+      <div id="nav_sidebar"class="side">
+        <h3 id="nav_title" class="navTitle">Report</h3>
+        <div class="navContainer">
+          <a href="#" class="nav__link active">
+            <span class="nav__name">Day Report</span>
+          </a>
+          <a href="#" class="nav__link">
+            <span class="nav__name">Maintenance</span>
+          </a>
+
+          <a href="#" class="nav__link">
+            <span class="nav__name">Rent Details</span>
+          </a>
+          
+          <!--Collapse-->
+          <div id="Tenantcollapse_down" class="nav__link collapse">
+            <div class="collapseTitle">
+              <span class="collapse_name">Tenant</span>
+
+              <i id="Tenantdropdown" onclick="TenantdropdownVisible" class="icons"
+                ><svg class="ionicon" viewBox="0 0 512 512">
+                  <title>Chevron Down</title>
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="48"
+                    d="M112 184l144 144 144-144"
+                  />
+                </svg>
+              </i>
+            </div>
+            <ul id="Tenantcollapse__menu" class="hidden">
+              <a href="#" id="Tenantcollapse_sublink1" class="hidden">Overall</a>
+              <a href="#" id="Tenantcollapse_sublink2" class="hidden">Individual</a>
+            </ul>
+          </div>
+
+          <!--Collapse-->
+          <div id="Apartmentcollapse_down" class="nav__link collapse">
+            <div class="collapseTitle">
+              <span class="collapse_name">Apartment</span>
+
+              <i id="Apartmentdropdown" onclick="ApartmentdropdownVisible" class="icons"
+                ><svg class="ionicon" viewBox="0 0 512 512">
+                  <title>Chevron Down</title>
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="48"
+                    d="M112 184l144 144 144-144"
+                  />
+                </svg>
+              </i>
+            </div>
+            <ul id="Apartmentcollapse__menu" class="hidden">
+              <a href="#" id="Apartmentcollapse_sublink1" class="hidden">Overall</a>
+            </ul>
+          </div>
+
+          <!--Collapse-->
+          <div id="Othercollapse_down" class="nav__link collapse">
+            <div class="collapseTitle">
+              <span class="collapse_name">Other Reports</span>
+
+              <i id="Otherdropdown" onclick="OtherdropdownVisible" class="icons"
+                ><svg class="ionicon" viewBox="0 0 512 512">
+                  <title>Chevron Down</title>
+                  <path
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="48"
+                    d="M112 184l144 144 144-144"
+                  />
+                </svg>
+              </i>
+            </div>
+            <ul id="Othercollapse__menu" class="hidden">
+              <a href="#" id="Othercollapse_sublink1" class="hidden">Bank Transaction</a>
+              <a href="#" id="Othercollapse_sublink2" class="hidden">Deposit / Invest</a>
+              <a href="#" id="Othercollapse_sublink3" class="hidden">Contact Details</a>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!--Main-->
+      <main>
+        Report Page
+
+      </main>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

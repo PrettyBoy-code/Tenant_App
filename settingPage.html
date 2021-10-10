@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Welcome</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Tenant Management Application</h1>
+      </header>
+      <!--nav bar-->
+      <nav>
+        <div class="navDiv">
+          <svg  id="mobile_menu"  viewBox="0 0 512 512">
+            <title>Menu</title>
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-miterlimit="10"
+              stroke-width="32"
+              d="M80 160h352M80 256h352M80 352h352"
+            />
+          </svg>
+          <ul class="navLink">
+            <a href="masterPage.html"><li id="master" class="navItems">Master</li></a>
+            <a href="processPage.html"><li id="process" class="navItems">Process</li></a>
+             <a href="reportPage.html"><li id="report" class="navItems">Report</li></a>
+             <a href="settingPage.html"><li id="settings" class="navItems">Settings</li></a>
+          </ul>
+        </div>
+      </nav>
+
+      <!--Sidebar nav-->
+      <div id="nav_sidebar"class="side">
+        <h3 id="nav_title" class="navTitle">Settings</h3>
+        <div class="navContainer">
+          <a href="#" class="nav__link active">
+            <span class="nav__name">Backup</span>
+          </a>
+          <a href="#" class="nav__link">
+            <span class="nav__name">Restore</span>
+          </a>
+      </div>
+      </div>
+      <!--Main-->
+      <main>
+        Setting Page
+       
+
+      </main>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
