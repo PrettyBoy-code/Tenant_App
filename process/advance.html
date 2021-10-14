@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./main.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/apart.css">
     <title>Welcome</title>
   </head>
   <body>
@@ -27,50 +28,35 @@
             />
           </svg>
           <ul class="navLink">
-            <li class="navItems">Master</li>
-            <li class="navItems">Process</li>
-            <li class="navItems">Report</li>
-            <li class="navItems">Settings</li>
+           <a href="../masterPage.html"><li id="master" class="navItems">Master</li></a>
+           <a href="./process/maintance.html"><li id="process" class="navItems">Process</li></a>
+            <a href="../reportPage.html"><li id="report" class="navItems">Report</li></a>
+            <a href="../settingPage.html"><li id="settings" class="navItems">Settings</li></a>
           </ul>
         </div>
       </nav>
 
       <!--Sidebar nav-->
       <div id="nav_sidebar"class="side">
-        <h3 id="nav_title" class="navTitle">Master</h3>
-        <div class="navContainer">
-          <a href="#" class="nav__link active">
-            <span class="nav__name">Apartment Reg</span>
+        <h3 id="nav_title" class="navTitle">Process</h3>
+        <div id="navConatiner" class="navContainer">
+          <a href="./maintance.html" class="nav__link active">
+            <span class="nav__name">Maintenances</span>
           </a>
-          <a href="#" class="nav__link">
-            <span class="nav__name">House Reg</span>
-          </a>
-
-          <a href="#" class="nav__link">
-            <span class="nav__name">Tenant Reg</span>
-          </a>
-          <a href="#" class="nav__link">
-            <span class="nav__name">Employee Reg</span>
+          <a href="./document.html" class="nav__link">
+            <span class="nav__name">Document</span>
           </a>
 
           <a href="#" class="nav__link">
-            <span class="nav__name">Contact</span>
+            <span class="nav__name">Other Transaction</span>
           </a>
-          <a href="#" class="nav__link">
-            <span class="nav__name">Bank Account</span>
-          </a>
-          <a href="#" class="nav__link">
-            <span class="nav__name">Deposit & Invest</span>
-          </a>
-          <a href="#" class="nav__link">
-            <span class="nav__name">Account Panel</span>
-          </a>
-
-          <div id="collapse_down" class="nav__link collapse">
+          
+          <!--Collapse-->
+          <div id="Paymentcollapse_down" class="nav__link collapse">
             <div class="collapseTitle">
-              <span class="collapse_name">Projects</span>
+              <span class="collapse_name">Payment</span>
 
-              <i id="dropdown" class="icons"
+              <i id="Paymentdropdown" class="icons"
                 ><svg class="ionicon" viewBox="0 0 512 512">
                   <title>Chevron Down</title>
                   <path
@@ -84,10 +70,9 @@
                 </svg>
               </i>
             </div>
-            <ul id="collapse__menu" class="hidden">
-              <a href="#" id="collapse_sublink1" class="hidden">Data</a>
-              <a href="#" id="collapse_sublink2" class="hidden">Group</a>
-              <a href="#" id="collapse_sublink3" class="hidden">Members</a>
+            <ul id="Paymentcollapse__menu" class="hidden">
+              <a href="./advance.html" id="Paymentcollapse_sublink1" class="hidden">Advance</a>
+              <a href="./rent.html" id="Paymentcollapse_sublink2" class="hidden">Rent</a>
             </ul>
           </div>
         </div>
@@ -97,13 +82,18 @@
       <main>
         <div class="wrapper">
           <div class="title">
-            Registration Form
+            ADVANCE AMOUNT RECEIPT
           </div>
         <form class="form" action="#">
           <div class="inputField">
-          <label for="fname">APARTMENT ID :</label>
+          <label for="fname">Tenant ID :</label>
           <input class="input" type="text" id="fname" name="fname" />
         </div>
+
+        <div class="inputField">
+            <label for="fname">Tenant NAME :</label>
+            <input class="input" type="text" id="fname" name="fname" />
+          </div>
 
         <div class="inputField">
           <label for="lname">DATE</label>
@@ -116,18 +106,33 @@
         </div>
 
           <div class="inputField">
-          <label for="address">Address:</label>
+          <label for="address">APARTMENT ID:</label>
           <textarea  class="textarea" name="address" id="address"></textarea
           >
         </div>
 
           <div class="inputField">
-          <label for="fname">NO OF HOUSE AVAILABLE :</label>
+          <label for="fname">ADVANCE AMOUNT :</label>
           <input class="input" type="number" id="fname" name="fname" />
         </div>
-
+        <div class="inputField">
+            <label for="fname">PAID AMOUNT :</label>
+            <input class="input" type="text" id="fname" name="fname" />
+          </div>
           <div class="inputField">
-          <label for="fname">OTHERS :</label>
+            <label for="fname">RECEIPT NO :</label>
+            <input class="input" type="text" id="fname" name="fname" />
+          </div>
+          <div class="inputField">
+            <label for="fname">HOUSE ID :</label>
+            <input class="input" type="text" id="fname" name="fname" />
+          </div>
+          <div class="inputField">
+            <label for="fname">R.AMOUNT :</label>
+            <input class="input" type="text" id="fname" name="fname" />
+          </div>
+          <div class="inputField">
+          <label for="fname">CURRENT BALANCE :</label>
           <input class="input" type="text" id="fname" name="fname" />
         </div>
 
@@ -164,6 +169,6 @@
 
       </main>
     </div>
-    <script src="./main.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>

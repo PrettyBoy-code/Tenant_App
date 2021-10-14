@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/house.css" />
+    <title>Welcome</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Tenant Management Application</h1>
+      </header>
+      <!--nav bar-->
+      <nav>
+        <div class="navDiv">
+          <svg id="mobile_menu" viewBox="0 0 512 512">
+            <title>Menu</title>
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-miterlimit="10"
+              stroke-width="32"
+              d="M80 160h352M80 256h352M80 352h352"
+            />
+          </svg>
+          <ul class="navLink">
+            <a href="../masterPage.html">
+              <li id="master" class="navItems">Master</li></a>
+              <a href="./process/maintance.html"><li id="process" class="navItems">Process</li></a>
+            <a href="../reportPage.html">
+              <li id="report" class="navItems">Report</li></a>        
+            <a href="../settingPage.html">
+            <li id="settings" class="navItems">Settings</li></a>
+          </ul>
+        </div>
+      </nav>
+
+      <!--Sidebar nav-->
+      <div id="nav_sidebar" class="side">
+        <h3 id="nav_title" class="navTitle">Master</h3>
+        <div class="navContainer">
+          <a href="../masterPage.html" class="nav__link active">
+            <span class="nav__name">Apartment Reg</span>
+          </a>
+          <a href="./houseReg.html" class="nav__link">
+            <span class="nav__name">House Reg</span>
+          </a>
+
+          <a href="./tenantREg.html" class="nav__link">
+            <span class="nav__name">Tenant Reg</span>
+          </a>
+          <a href="./employerReg.html" class="nav__link">
+            <span class="nav__name">Employee Reg</span>
+          </a>
+
+          <a href="./contact.html" class="nav__link">
+            <span class="nav__name">Contact</span>
+          </a>
+          <a href="./bankReg.html" class="nav__link">
+            <span class="nav__name">Bank Account</span>
+          </a>
+          <a href="#" class="nav__link">
+            <span class="nav__name">Deposit & Invest</span>
+          </a>
+          <a href="#" class="nav__link">
+            <span class="nav__name">Account Panel</span>
+          </a>
+        </div>
+      </div>
+
+      <!--Main-->
+      <main>
+        <div class="wrapper">
+          <div class="title">Employer Registration</div>
+          <form class="form" action="#">
+    
+              <div class="inputField">
+                <label for="fname">EMP ID :</label>
+                <input class="input" type="text" id="fname" name="fname" />
+              </div>
+
+              <div class="inputField">
+                <label for="lname">DATE :</label>
+                <input class="input" type="date" id="lname" name="lname" />
+              </div>
+              
+              <div class="inputField">
+                <label for="lname">EMP NAME :</label>
+                <input class="input" type="text" id="lname" name="lname" />
+              </div>
+
+              <div class="inputField">
+                <label for="lname">USER NAME :</label>
+                <input class="input" type="text" id="lname" name="lname" />
+              </div>
+
+              
+              <div class="inputField">
+                <label for="lname">PASSWORD :</label>
+                <input class="input" type="text" id="lname" name="lname" />
+              </div>
+
+              <div class="inputField">
+                <label for="fname">E-MAIL ID :</label>
+                <input class="input" type="number" id="fname" name="fname" />
+              </div>
+
+              <div class="inputField">
+                <label for="fname">REFERENCE :</label>
+                <input class="input" type="text" id="fname" name="fname" />
+              </div>
+              
+              <div class="inputField">
+                <label for="fname">REMARKS :</label>
+                <input class="input" type="number" id="fname" name="fname" />
+              </div>
+
+              <div class="inputField">
+                <label for="fname">CONTACT NO :</label>
+                <input class="input" type="text" id="fname" name="fname" />
+              </div>
+
+              <div class="inputField">
+                <label for="fname">ADDRESS :</label>
+                <input class="input" type="text" id="fname" name="fname" />
+              </div>
+            
+            <div class="inputField">
+                <button class="btn" type="submit">Submit</button>
+              </div>
+
+              <div class="inputField">
+                <button class="btn">Clear</button>
+              </div>
+          </form>
+        </div>
+
+        <div class="dataTable">
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Points</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Dom</td>
+                <td>6000</td>
+              </tr>
+              <tr class="active-row">
+                <td>Melissa</td>
+                <td>5150</td>
+              </tr>
+              <!-- and so on... -->
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
