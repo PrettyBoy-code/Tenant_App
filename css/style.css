@@ -39,6 +39,7 @@ a {
   padding-top: 2rem;
 }
 .loginForm {
+  background-color: #44444448;
   display: flex;
   flex-direction: column;
   text-align: center;
