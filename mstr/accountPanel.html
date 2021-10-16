@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/house.css" />
+    <link rel="stylesheet" href="../css/account.css">
+    
+    <title>Welcome</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Tenant Management Application</h1>
+      </header>
+      <!--nav bar-->
+      <nav>
+        <div class="navDiv">
+          <svg id="mobile_menu" viewBox="0 0 512 512">
+            <title>Menu</title>
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-miterlimit="10"
+              stroke-width="32"
+              d="M80 160h352M80 256h352M80 352h352"
+            />
+          </svg>
+          <ul class="navLink">
+            <a href="../masterPage.html">
+              <li id="master" class="navItems">Master</li></a>
+              <a href="../process/maintance.html"><li id="process" class="navItems">Process</li></a>
+            <a href="../reportPage.html">
+              <li id="report" class="navItems">Report</li></a>        
+            <a href="../settingPage.html">
+            <li id="settings" class="navItems">Settings</li></a>
+          </ul>
+        </div>
+      </nav>
+
+      <!--Sidebar nav-->
+      <div id="nav_sidebar" class="side">
+        <h3 id="nav_title" class="navTitle">Master</h3>
+        <div class="navContainer">
+          <a href="../masterPage.html" class="nav__link active">
+            <span class="nav__name">Apartment Reg</span>
+          </a>
+          <a href=./houseReg.html" class="nav__link">
+            <span class="nav__name">House Reg</span>
+          </a>
+
+          <a href="./tenantREg.html" class="nav__link">
+            <span class="nav__name">Tenant Reg</span>
+          </a>
+          <a href="./employerReg.html" class="nav__link">
+            <span class="nav__name">Employee Reg</span>
+          </a>
+
+          <a href="./contact.html" class="nav__link">
+            <span class="nav__name">Contact</span>
+          </a>
+          <a href="./bankReg.html" class="nav__link">
+            <span class="nav__name">Bank Account</span>
+          </a>
+          <a href="#" class="nav__link">
+            <span class="nav__name">Deposit & Invest</span>
+          </a>
+          <a href="./accountPanel.html" class="nav__link">
+            <span class="nav__name">Account Panel</span>
+          </a>
+        </div>
+      </div>
+
+      <!--Main-->
+      <main>
+        <div class="wrapper">
+          <div class="title">Account Panel</div>
+          <form class="form account" action="#">
+              <div class="accinput">
+            <div class="inputField">
+              <label for="fname">Emp ID :</label>
+              <input class="input" type="text" id="fname" name="fname" />
+            </div>
+
+            <div class="inputField">
+                <label for="lname">Emp NAME</label>
+                <input class="input" type="text" id="lname" name="lname" />
+              </div>
+
+            <div class="inputField">
+              <label for="lname">DATE</label>
+              <input class="input" type="date" id="lname" name="lname" />
+            </div>
+
+            <div class="inputField">
+              <label for="lname">Role :</label>
+              <input class="input" type="text" id="lname" name="lname" />
+            </div>
+
+            <div class="inputField">
+                <label for="address">Remarks:</label>
+                <textarea  class="textarea" name="address" id="address"></textarea>
+              </div>
+
+            <div class="inputField">
+              <button class="btn" type="submit">Submit</button>
+            </div>
+
+            <div class="inputField">
+              <button class="btn">Clear</button>
+            </div>
+            </div>
+            <div class="checkBox">
+                <input type="checkbox" id="ApartmentRegCheckbox" name="ApartmentReg" value="ApartmentReg">
+                <label for="ApartmentRegCheckbox">ApartmentReg</label>
+                <input type="checkbox" id="HouseRegCheckbox" name="HouseReg" value="HouseReg">
+                <label for="HouseRegCheckbox">HouseReg</label>
+                <input type="checkbox" id="TenantRegCheckbox" name="TenantReg" value="TenantReg">
+                <label for="TenantRegCheckbox">TenantReg</label>
+                <input type="checkbox" id="EmployeeRegCheckbox" name="EmployeeReg" value="EmployeeReg">
+                <label for="EmployeeRegCheckbox">EmployeeReg</label>
+                <input type="checkbox" id="ContactCheckbox" name="Contact" value="Contact">
+                <label for="ContactCheckbox">Contact</label>
+                <input type="checkbox" id="BankAccountCheckbox" name="BankAccount" value="BankAccount">
+                <label for="BankAccountCheckbox">BankAccount</label>
+                <input type="checkbox" id="DepositorInvestCheckbox" name="DepositorInvest" value="DepositorInvest">
+                <label for="DepositorInvestCheckbox">DepositorInvest</label>
+                <input type="checkbox" id="AccountPanelCheckbox" name="AccountPanel" value="AccountPanel">
+                <label for="AccountPanelCheckbox">AccountPanel</label>
+                <input type="checkbox" id="PaymentCheckbox" name="Payment" value="Payment">
+                <label for="PaymentCheckbox">Payment</label>
+                <input type="checkbox" id="MaintenanceCheckbox" name="Maintenance" value="Maintenance">
+                <label for="MaintenanceCheckbox">Maintenance</label>
+                <input type="checkbox" id="DocumentCheckbox" name="Document" value="Document">
+                <label for="DocumentCheckbox">Document</label>
+                <input type="checkbox" id="OtherTransactionCheckbox" name="OtherTransaction" value="OtherTransaction">
+                <label for="OtherTransactionCheckbox">OtherTransaction</label>
+                <input type="checkbox" id="DayReportCheckbox" name="DayReport" value="DayReport">
+                <label for="DayReportCheckbox">DayReport</label>
+                <input type="checkbox" id="TenantCheckbox" name="Tenant" value="Tenant">
+                <label for="TenantCheckbox">Tenant</label>
+                <input type="checkbox" id="ApartmentsCheckbox" name="Apartments" value="Apartments">
+                <label for="ApartmentsCheckbox">Apartments</label>
+                <input type="checkbox" id="TenantCheckbox" name="Maintenances" value="Maintenances">
+                <label for="MaintenancesCheckbox">Maintenances</label>
+                <input type="checkbox" id="RentDetailsCheckbox" name="RentDetails" value="RentDetails">
+                <label for="RentDetailsCheckbox">RentDetails</label>
+                <input type="checkbox" id="OtherReportsCheckbox" name="OtherReports" value="OtherReports">
+                <label for="OtherReportsCheckbox">OtherReports</label>
+                <input type="checkbox" id="SettingsCheckbox" name="Settings" value="Settings">
+                <label for="SettingsCheckbox">Settings</label>
+                <input type="checkbox" id="EditCheckbox" name="Edit" value="Edit">
+                <label for="EditCheckbox">Edit</label>
+                <input type="checkbox" id="DeleteCheckbox" name="Delete" value="Delete">
+                <label for="DeleteCheckbox">Delete</label>
+            </div>
+          </form>
+        </div>
+
+        <div class="dataTable">
+          <table class="styled-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Points</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Dom</td>
+                <td>6000</td>
+              </tr>
+              <tr class="active-row">
+                <td>Melissa</td>
+                <td>5150</td>
+              </tr>
+              <!-- and so on... -->
+            </tbody>
+          </table>
+        </div>
+      </main>
+    </div>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -44,16 +44,18 @@ let Otherreports = true;
 
 mobile_menu.addEventListener("click", sidebarHidden);
 nav_sidebar.style.display = "none";
-
 function sidebarHidden() {
   console.log("clicked");
-  
+
+
   if (nav_sidebar.style.display == "block") {
     nav_sidebar.style.display = "none";
   } else {
     nav_sidebar.style.display = "block";
   }
 }
+
+
 
 
 if (Paymentdropdown){

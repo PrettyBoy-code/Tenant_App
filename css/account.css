@@ -1,0 +1,13 @@
+.account{
+    display: flex;
+    gap: 7rem;
+}
+.checkBox{
+    height:50% ;
+}
+
+@media (max-width: 870px){
+    main{
+        display: none !important;
+    }
+}
