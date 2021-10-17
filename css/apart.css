@@ -31,7 +31,8 @@
     width: 200px;
     color: #14213d;
     margin-right: 10px;
-    font-size: 14px;
+    font-size: .90rem;
+    font-weight: bold;
   }
   
   .inputField .input,

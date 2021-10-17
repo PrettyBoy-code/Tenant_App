@@ -1,5 +1,6 @@
 
 
+
 //sidebar
 const mobile_menu = document.getElementById("mobile_menu");
 const nav_sidebar = document.getElementById("nav_sidebar");
@@ -42,18 +43,30 @@ let Tenant = true;
 let Apartment = true;
 let Otherreports = true;
 
-mobile_menu.addEventListener("click", sidebarHidden);
-nav_sidebar.style.display = "none";
-function sidebarHidden() {
-  console.log("clicked");
 
+window.addEventListener("orientationchange", function() {
+  // Announce the new orientation number
+  console.log(window.screen.width)
+  mobile_menu.addEventListener("click", sidebarHidden);
 
-  if (nav_sidebar.style.display == "block") {
+  if(window.screen.width < 1024){
     nav_sidebar.style.display = "none";
-  } else {
+  }else{
     nav_sidebar.style.display = "block";
+    mobile_menu.removeEventListener("click",sidebarHidden);
   }
-}
+  
+  function sidebarHidden() {
+    console.log("clicked");
+
+    if (nav_sidebar.style.display == "block") {
+      nav_sidebar.style.display = "none";
+    } else {
+      nav_sidebar.style.display = "block";
+    }
+  } 
+}, false);
+
 
 
 
