@@ -42,33 +42,34 @@ let drop = true;
 let Tenant = true;
 let Apartment = true;
 let Otherreports = true;
-
+nav_sidebar.style.display = "none";
+if(window.screen.width > 1024){
+nav_sidebar.style.display = "block";
+}else{
+  mobile_menu.addEventListener("click", sidebarHidden);
+}
 
 window.addEventListener("orientationchange", function() {
   // Announce the new orientation number
-  console.log(window.screen.width)
-  mobile_menu.addEventListener("click", sidebarHidden);
 
+  console.log(window.screen.width)
   if(window.screen.width < 1024){
     nav_sidebar.style.display = "none";
-  }else{
-    nav_sidebar.style.display = "block";
-    mobile_menu.removeEventListener("click",sidebarHidden);
   }
   
-  function sidebarHidden() {
-    console.log("clicked");
-
-    if (nav_sidebar.style.display == "block") {
-      nav_sidebar.style.display = "none";
-    } else {
-      nav_sidebar.style.display = "block";
-    }
-  } 
+  
 }, false);
 
 
+function sidebarHidden() {
+  console.log("clicked");
 
+  if (nav_sidebar.style.display == "block") {
+    nav_sidebar.style.display = "none";
+  } else {
+    nav_sidebar.style.display = "block";
+  }
+} 
 
 
 if (Paymentdropdown){
